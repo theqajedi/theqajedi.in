@@ -1,0 +1,93 @@
+baseURL = "https://theqajedi.in/"
+title = "The QA Jedi"
+theme = "hugo-coder"
+
+languagecode = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+##googleAnalytics = "UA-123-45"
+
+[params]
+author = "Abilash Margapuram"
+title = "The QA Jedi"
+keywords = "blog,qa,tester"
+info = "On a quest to make the force stronger on the quality side."
+avatarurl = "images/avatar.jpg"
+favicon_32 = "images/favicon-32x32.png"
+favicon_16 = "images/favicon-16x16.png"
+touchicon = "images/apple-touch-icon.png"
+
+dateformat = "January 2, 2006"
+
+hideFooter = false
+hideCredits = false
+hideCopyright = false
+since = 2020
+
+# Git Commit in Footer, uncomment the line below to enable it.
+commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+rtl = false
+
+# Specify light/dark colorscheme
+# Supported values:
+# "auto" (use preference set by browser)
+# "dark" (dark background, light foreground)
+# "light" (light background, dark foreground) (default)
+colorscheme = "auto"
+
+# Series see also post count
+maxSeeAlsoItems = 5
+
+# Enable Twemoji
+enableTwemoji = true
+
+# Custom CSS
+custom_css = []
+
+# Custom JS
+custom_js = []
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+
+[[params.social]]
+name = "Blog"
+icon = "fab fa-blogger-b"
+weight = 1
+url = "/posts"
+[[params.social]]
+name = "LinkedIn"
+icon = "fab fa-linkedin"
+weight = 1
+url = "https://www.linkedin.com/in/abilash-margapuram"
+[[params.social]]
+name = "Github"
+icon = "fab fa-github"
+weight = 1
+url = "https://github.com/theqajedi"
+[[params.social]]
+name = "Email"
+icon = "far fa-envelope"
+weight = 1
+url = "mailto:abilash31@yahoo.co.in"
+
+[languages]
+[languages.en]
+languagename = "English"
+
+[languages.en.menu]
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 2
+url = "posts/"
