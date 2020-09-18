@@ -3,8 +3,3 @@
 *.iws
 *.iml
 *.ipr
-
-**/themes/
-demo/
-.hugo/*
-!.hugo/version
