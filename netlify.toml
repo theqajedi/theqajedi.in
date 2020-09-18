@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo -t pulp"
+command = "hugo -t hugo-coder"
 
 [context.production.environment]
 HUGO_VERSION = "0.75.1"
