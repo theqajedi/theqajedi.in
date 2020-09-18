@@ -1,6 +1,8 @@
 <section class="container centered">
   <div class="about">
-    <div class="jedi"><img src="images/qa_jedi.png" alt="jedi"></div>
+    {{ with .Site.Params.jedi }}
+    <div class="jedi"><img src="{{ . | relURL }}" alt="jedi"></div>
+    {{ end }}
       {{ with .Site.Params.avatarurl }}
         <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
       {{ end }}
