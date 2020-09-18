@@ -228,16 +228,13 @@ img.emoji {
     font-size: 1.6rem;
     margin: 0; }
 
-.avatar img, .jedi img {
-  width: 20rem;
-  height: auto; }
-  @media only screen and (max-width: 768px) {
-    .avatar img, .jedi img {
-      width: 13rem; } }
 .avatar img {
-  border-radius: 50%;
-  margin-top: 1rem; }
-
+  width: 20rem;
+  height: auto;
+  border-radius: 50%; }
+  @media only screen and (max-width: 768px) {
+    .avatar img {
+      width: 10rem; } }
 .list ul {
   margin: 3.2rem 0 3.2rem 0;
   list-style: none;
