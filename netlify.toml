@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "make prepare && hugo --source demo --baseURL https://theqajedi.in/"
+command = "hugo -b https://theqajedi.in/ -D --gc"
 
 [context.production.environment]
 HUGO_VERSION = "0.75.1"
@@ -12,7 +12,7 @@ HUGO_VERSION = "0.75.1"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "make prepare && hugo --source demo --buildFuture --buildDrafts --baseURL $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.75.1"
