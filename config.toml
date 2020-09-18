@@ -1,95 +1,58 @@
-baseURL = "https://theqajedi.in/"
+baseurl = "https://theqajedi.in/"
 title = "The QA Jedi"
-theme = "hugo-coder"
-
-languagecode = "en"
-
-paginate = 20
+theme = "pulp"
 canonifyurls = true
+##hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourdiscussshortname"
-##googleAnalytics = "UA-123-45"
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
 
 [params]
-author = "Abilash Margapuram"
-title = "The QA Jedi"
-keywords = "blog,qa,tester"
-info = "On a quest to make the force stronger on the quality side."
-avatarurl = "/avatar.jpg"
-jedi = "/qa_jedi.png"
-error404 = "/android-404-845x504.png"
-favicon_32 = "/favicon-32x32.png"
-favicon_16 = "/favicon-16x16.png"
-touchicon = "/apple-touch-icon.png"
+    author = "Abilash Margapuram"
+    avatar = "/avatar.jpg"
+    # avatarDescription = "My avatar description"
+    favicon = "/favicon.ico"
+    description = """
+        On a quest to make the force stronger on the quality side.
+    """
+    publicationYear = "2020"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
 
-dateformat = "January 2, 2006"
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
 
-hideFooter = false
-hideCredits = false
-hideCopyright = false
-since = 2020
+[[menu.main]]
+    identifier = "blog"
+    # name = "Blog" #If display text link, cancel comment out
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/blog/"
+    weight = 10
 
-# Git Commit in Footer, uncomment the line below to enable it.
-commit = "https://github.com/luizdepra/hugo-coder/tree/"
+[[menu.main]]
+    identifier = "twitter"
+    # name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/username"
+    weight = 20
 
-rtl = false
+[[menu.main]]
+    identifier = "github"
+    # name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/username"
+    weight = 30
 
-# Specify light/dark colorscheme
-# Supported values:
-# "auto" (use preference set by browser)
-# "dark" (dark background, light foreground)
-# "light" (light background, dark foreground) (default)
-colorscheme = "auto"
-
-# Series see also post count
-maxSeeAlsoItems = 5
-
-# Enable Twemoji
-enableTwemoji = true
-
-# Custom CSS
-custom_css = []
-
-# Custom JS
-custom_js = []
-
-[taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
-
-[[params.social]]
-name = "Blog"
-icon = "fab fa-blogger-b"
-weight = 1
-url = "/posts"
-[[params.social]]
-name = "LinkedIn"
-icon = "fab fa-linkedin"
-weight = 1
-url = "https://www.linkedin.com/in/abilash-margapuram"
-[[params.social]]
-name = "Github"
-icon = "fab fa-github"
-weight = 1
-url = "https://github.com/theqajedi"
-[[params.social]]
-name = "Email"
-icon = "far fa-envelope"
-weight = 1
-url = "mailto:abilash31@yahoo.co.in"
-
-[languages]
-[languages.en]
-languagename = "English"
-
-[languages.en.menu]
-
-[[languages.en.menu.main]]
-name = "Blog"
-weight = 2
-url = "posts/"
+[[menu.main]]
+    identifier = "email"
+    # name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:username@example.com"
+    weight = 40
